@@ -1,0 +1,59 @@
+@import '../../Styles/Variables.scss';
+@import '../../Styles/Media.scss';
+@import '../../Styles/reset.scss';
+
+.Header {
+  display: flex;
+  justify-content: space-evenly;
+  height: 12vh;
+  width: 100%;
+  background-color: $darkgreen;
+  @include smobile {
+    background-color: aqua;
+  }
+  .title {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+    width: 60%;
+    color: white;
+    font-size: 20px;
+  }
+  .search {
+    display: flex;
+    height: 100%;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    .hIcon {
+      height: 35%;
+      width: 10%;
+      color: white;
+    }
+    .header_input {
+      color: white;
+      width: 0%;
+      transition: 1s ease;
+      background-color: $darkgreen;
+      border-bottom: 1px solid rgb(202, 194, 194);
+      // border: 2px solid red;
+    }
+  }
+}
+.newSearch {
+  width: 70% !important;
+  height: 30px;
+  font-size: 18px;
+  transition: 1s ease;
+  padding-left: 8px;
+  background-color: $darkgreen !important;
+}
